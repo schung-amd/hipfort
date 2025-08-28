@@ -98,6 +98,8 @@ if(BUILD_TESTING)
 
   if(TARGET hipfort::rocsolver)
     hipfort_add_test(rocsolver rocsolver_dgeqrf f2003)
+    hipfort_add_test(rocsolver rocsolver_dsterf f2003)
+
     hipfort_add_test(rocsolver rocsolver_dgeqrf f2008)
   endif()
 
